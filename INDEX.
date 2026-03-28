@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Indumentaria | Tienda Oficial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">AURAINDUMENTARIA</div>
+            
+            <ul class="nav-menu">
+                <li><a href="#nuevo">NUEVO</a></li>
+                <li><a href="#combina">COMBINA TUS OUTFITS</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/auraindumentariaog?igsh=MXh6NmY5bXltcDNxaQ==" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61577531774795" target="_blank">Facebook</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="hero">
+        </main>
+
+</body>
+</html>
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #007bff; /* Un toque de color azul como el buzo */
+}
+
+/* Redes Sociales */
+.social-icons a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+    margin-left: 15px;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #333;
+    color: #fff;
+} 
+<main id="hero">
+        <section class="video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="video-aura.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <div class="overlay-text">
+                <h1>NUEVA COLECCIÓN</h1>
+                <a href="#nuevo" class="btn-shop">VER MÁS</a>
+            </div>
+        </section>
+
+        <section class="image-container">
+            <img src="Conjunto animal print .jpg" alt="Conjunto Animal Print Aura" class="hero-image">
+            <div class="image-info">
+                <h2>CONJUNTO ANIMAL PRINT</h2>
+                <p>Tu outfit ideal para destacar.</p>
+            </div>
+        </section>
+    </main>
+    /* Contenedores de Portada */
+#hero {
+    width: 100%;
+}
+
+.video-container, .image-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Ocupa el 80% de la altura de la pantalla */
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.hero-video, .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen/video cubra todo el espacio sin deformarse */
+}
+
+/* Textos sobre la imagen/video */
+.overlay-text, .image-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.btn-shop {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-shop:hover {
+    background: #007bff;
+    color: #fff;
+} 
+<section id="nuevo" class="productos-container">
+        <h2 class="titulo-seccion">NUESTROS INGRESOS</h2>
+        
+        <div class="grid-productos">
+            <div class="producto-card">
+                <img src="video-aura.jpg" alt="Buzo Rayado"> <h3>Buzo Rayado Sol de Mayo</h3>
+                <p class="precio">$25.000</p>
+                <a href="https://wa.me/+5492622466018?text=Hola%20Aura!%20Me%20interesa%20el%20Buzo%20Rayado%20Sol%20de%20Mayo" class="btn-whatsapp" target="_blank">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+
+            <div class="producto-card">
+                <img src="Conjunto animal print .jpg" alt="Conjunto Animal Print">
+                <h3>Conjunto Animal Print</h3>
+                <p class="precio">$32.000</p>
+                <a href="https://wa.me/TU_NUMERO?text=Hola%20Aura!%20Me%20interesa%20el%20Conjunto%20Animal%20Print" class="btn-whatsapp" target="_blank">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AURAINDUMENTARIA - Todos los derechos reservados</p>
+    </footer>
+    /* Sección Productos */
+.productos-container {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.producto-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.producto-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-weight: 600;
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+    display: block;
+    background: #25d366; /* Color oficial de WhatsApp */
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #128c7e;
+}
+
+footer {
+    padding: 40px;
+    background: #333;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+} 
